@@ -1,4 +1,4 @@
-# CareerFairTracker
+# CareerFairTracker 
 
 ## What is the purpose of this project?
 
