@@ -1,5 +1,12 @@
+addons:
+  postgresql: 9.6
+after_success:
+  - codecov
+dist: trusty
 language: ruby
-
-script: bundle exec rake
-
-rvm: 2.1
+rvm:
+  - 2.6.5
+script:
+  - bundle exec rails db:migrate RAILS_ENV=test
+  - bundle exec rails db:seed RAIL_ENV=test
+  - bundle exec rspec --cov-report term --cov=CareerFairTracker/test/
