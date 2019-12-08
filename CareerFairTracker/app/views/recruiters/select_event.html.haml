@@ -1,0 +1,17 @@
+%table
+    %thead 
+        %tr 
+            %th Name 
+            %th Event Date
+            %th Start Time 
+            %th End Time 
+            %th{ :colspan => 3 }
+    %tbody 
+        - @events.each do |event|
+            %tr 
+                %td= event.name 
+                %td= event.event_date 
+                %td= event.start_time
+                %td= event.end_time 
+                %td= link_to "Select Event", generate_booth_code_path
+
