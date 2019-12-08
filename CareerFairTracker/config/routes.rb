@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
   get 'admin/dashboard', to: 'admins#dashboard', as: 'admin_dashboard'
-  get 'recruiter/dashboard', to: 'recruiters#dashboard', as: 'recruiter_dashboard'
+
   get 'student/dashboard', to: 'students#dashboard', as: 'student_dashboard'
+
+  get 'recruiter/dashboard', to: 'recruiters#dashboard', as: 'recruiter_dashboard'
+  get 'recruiter/select_event', to: 'recruiters#select_event', as: 'recruiter_selects_event'
+  get 'recruiter/generate_booth_code', to: 'recruiters#generate_booth_code', as: 'generate_booth_code'
   
   resources :admins
   delete 'events', to: 'events#destroy'
