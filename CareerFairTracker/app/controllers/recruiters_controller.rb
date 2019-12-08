@@ -58,6 +58,14 @@ class RecruitersController < ApplicationController
     end
   end
 
+  def select_event
+    @events = Event.all
+  end
+
+  def generate_booth_code
+    @booth_code = 1234
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_recruiter
