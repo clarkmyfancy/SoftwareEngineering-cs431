@@ -15,5 +15,15 @@
   <%= @student.major %>
 </p>
 
+<p>
+  <strong>Expected Grad Month:</strong>
+  <%= @student.expected_grad_month %>
+</p>
+
+<p>
+  <strong>Expected Grad Year:</strong>
+  <%= @student.expected_grad_year %>
+</p>
+
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back to Dashboard', student_dashboard_path %>

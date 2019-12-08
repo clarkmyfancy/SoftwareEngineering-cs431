@@ -8,3 +8,8 @@
 %br
 = link_to "Edit Profile", edit_student_path(session[:user_id_for_their_type])
 %br
+%br
+%p= "Enter the Event Code Below"
+%br
+<input id="event code" name="event[code]" size="20" type="text" />
+= button_to "Submit Code"
