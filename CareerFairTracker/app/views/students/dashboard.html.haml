@@ -6,5 +6,7 @@
 %br 
 %p= "#{@welcome_message}"
 %br
-= link_to "Edit Profile", edit_student_path(session[:user_id_for_their_type])
-%br
+-# = link_to "Edit Profile", edit_student_path(session[:user_id_for_their_type])
+-# %br
+<input id="event_id" type="text" />
+= link_to "Attend Event", attend_event_path
