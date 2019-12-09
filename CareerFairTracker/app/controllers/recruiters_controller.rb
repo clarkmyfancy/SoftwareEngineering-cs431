@@ -63,7 +63,8 @@ class RecruitersController < ApplicationController
   end
 
   def generate_booth_code
-    @booth_code = 1234
+    @event = Event.find params[:format]
+    @booth_code = @event.id
   end
 
   private
