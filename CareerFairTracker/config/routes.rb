@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'admin/dashboard', to: 'admins#dashboard', as: 'admin_dashboard'
 
   get 'student/dashboard', to: 'students#dashboard', as: 'student_dashboard'
+  get 'student/attend_event', to: 'students#attend_event', as: 'attend_event'
 
   get 'recruiter/dashboard', to: 'recruiters#dashboard', as: 'recruiter_dashboard'
   get 'recruiter/select_event', to: 'recruiters#select_event', as: 'recruiter_selects_event'

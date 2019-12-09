@@ -39,6 +39,10 @@ class StudentsController < ApplicationController
         @welcome_message = "Welcome #{@user_tag}"
     end
 
+    def attend_event
+
+    end
+
     def update
         respond_to do |format|
             if @student.update(student_params)

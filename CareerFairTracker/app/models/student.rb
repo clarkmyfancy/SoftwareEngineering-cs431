@@ -1,5 +1,6 @@
 class Student < ApplicationRecord
     belongs_to :user, optional: true
+    belongs_to :event, optional: true
 
     def self.to_csv
         attributes = %w(first_name last_name major)
